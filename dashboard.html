@@ -30,13 +30,13 @@
                                     <i class="fa-solid fa-calendar-days fa-xl icon-color"></i>
                                 </div>
                                 <select id="efficiency-select" class="icon-color form-select pt-2 pb-2 ps-5" aria-label="Default select example">
-                                    <option value="1" selected>JANUARY</option>
-                                    <option value="2">FEBRUARY</option>
-                                    <option value="3">MARCH</option>
-                                    <option value="4">APRIL</option>
-                                    <option value="5">MAY</option>
-                                    <option value="6">JUNE</option>
-                                    <option value="7">JULY</option>
+                                    <option value="JANUARY" selected>JANUARY</option>
+                                    <option value="FEBRUARY">FEBRUARY</option>
+                                    <option value="MARCH">MARCH</option>
+                                    <option value="APRIL">APRIL</option>
+                                    <option value="MAY">MAY</option>
+                                    <option value="JUNE">JUNE</option>
+                                    <option value="JULY">JULY</option>
                                 </select>
                             </div>
                         </div>
@@ -131,20 +131,27 @@
   <section id="budget-section">
       <div class="container">
           <div class="row">
-              <div class="col-lg-7 mt-3 mb-2">
+              <div class="col-lg-7 mt-3 mb-3">
                 <div class="card">
                     <div class="card-body">
                         <div class="date-row mb-2 d-flex justify-content-between align-items-center">
                             <h5 style="color: #333333;">Budget</h5>
-                            <div>
-                                <select id="budget-select" class="icon-color form-select pt-2 pb-2 ps-5" aria-label="Default select example">
-                                    <option selected value="">Filter</option>
+                            <div class="w-25">
+                                <select id="budget-select" class="icon-color form-select pt-2 pb-2" aria-label="Default select example">
+                                    <option selected value="Filter">Filter</option>
+                                    <option value="Past-months">Past Months</option>
+                                    <option value="Jan">Jan</option>
+                                    <option value="Feb">Feb</option>
+                                    <option value="Mar">Mar</option>
+                                    <option value="Apr">Apr</option>
+                                    <option value="May">May</option>
+                                    <option value="Jun">Jun</option>
                                     <option value="Jul">Jul</option>
                                     <option value="Aug">Aug</option>
                                     <option value="Sep">Sep</option>
                                     <option value="Oct">Oct</option>
                                     <option value="Nov">Nov</option>
-                                    <option value="De ">Dec</option>
+                                    <option value="Dec">Dec</option>
                                 </select>
                             </div>
                         </div>
@@ -155,7 +162,41 @@
                 </div>
               </div>
               <div class="col-lg-5 mt-3 mb-2">
-
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row border-top">
+                            <div class="col-lg-6">
+                                <div class="generator-alerts pt-2 mt-3 mb-3">
+                                    <p><i class="fa-solid fa-circle text-success pe-2"></i>High Temperature</p>
+                                    <p><i class="fa-solid fa-circle text-success pe-2"></i>Low Pressure</p>
+                                    <p><i class="fa-solid fa-circle text-success pe-2"></i>Low oil Level</p>
+                                    <p><i class="fa-regular fa-circle icon-color pe-2"></i>Low Level</p>
+                                    <p><i class="fa-solid fa-circle text-primary pe-2"></i>Maintenance Requested</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="temp d-flex pt-2">
+                                    <div class="svg">
+                                        <i class="bi bi-thermometer-half fs-2"></i>
+                                    </div>
+                                    <div class="temp-text">
+                                        <p class="mb-0">Coolant Temperature</p>
+                                        <p>51.0 oC</p>
+                                    </div>
+                                </div>
+                                <div class="pressure d-flex pt-2">
+                                    <div class="svg pe-2">
+                                        <img src="img/icons8-engine-oil-50.png" alt="" class="w-100">
+                                    </div>
+                                    <div class="temp-text">
+                                        <p class="mb-0">Oil Pressure</p>
+                                        <p>4.5 Bar</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
               </div>
           </div>
       </div>
